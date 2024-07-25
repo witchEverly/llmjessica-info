@@ -8,63 +8,52 @@
     <!--    <link rel="mask-icon" href="images/favicon_2.svg">-->
     <!--    <link rel="apple-touch-icon" href="images/favicon_2.png">-->
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        * {
+            box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
             margin: 0;
             padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
             background-color: #21011e; /* Dark Purple */
             color: #d3d3d3; /* Grey Text */
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 20px; /* Add padding to body for better spacing */
         }
         .container {
-            max-width: 1000px;
-            margin: 10px auto;
-            padding: 40px;
+            width: 100%;
+            max-width: 900px;
             background-color: #1f1e33;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            padding: 40px;
         }
         h1, h2, h3 {
             text-align: center;
             color: #fe428e; /* Radical Pink */
+            margin: 20px 0;
         }
         .intro {
             text-align: center;
             font-size: 1.3em;
-            margin: 20px;
+            margin: 20px 0;
         }
         .quote-section {
             text-align: center;
             font-size: 1.2em;
-            /* font style: italic; */
-            font-style: italic;
-            margin: 20px;
-        }
-        .content {
-            text-align: center;
-            margin: 20px;
-        }
-        .demo-list {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        .demo-list li {
             margin: 20px 0;
         }
-        .demo-list a {
-            color: #fe428e; /* Radical Pink */
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .demo-list a:hover {
-            text-decoration: underline;
-        }
-                .profile-section {
+        .profile-section {
             display: flex;
             flex-wrap: wrap;
             align-items: center; /* Center items vertically */
             justify-content: center;
-            margin: 1px 0;
+            margin: 20px 0;
         }
         .profile-pic-container {
             flex: 1;
@@ -78,7 +67,7 @@
         .profile-pic {
             border: 1px solid #d3d3d3;
             width: 100%;
-            max-width: 300px;
+            max-width: 400px;
             height: auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* For shadow */
         }
@@ -97,7 +86,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            margin: 5px;
+            margin: 30px 10px;
         }
         .subdomain-container {
             background-color: #3a1b35; /* Lighter Purple Background */
@@ -107,7 +96,7 @@
             border-radius: 10px;
             text-align: center;
             width: 100%;
-            max-width: 800px;
+            max-width: 550px;
             margin: 20px auto;
         }
         .subdomain-container a {
@@ -123,6 +112,9 @@
             margin: 10px 1%;
         }
         .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
             padding: 20px 0;
             background-color: #21011e; /* Dark Purple Background */
@@ -130,9 +122,22 @@
             margin-top: 40px;
             box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow at the top */
         }
+        .footer p {
+            margin: 0 0 10px 0;
+        }
+        .footer-img {
+            margin: 10px 0;
+            border: solid #d3d3d3;
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .footer a {
             color: #fe428e;
             text-decoration: none;
+            margin: 5px 0;
         }
         .footer a:hover {
             text-decoration: underline;
